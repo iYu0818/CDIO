@@ -31,13 +31,17 @@ import cn.gson.oasys.model.entity.system.SystemMenu;
 import cn.gson.oasys.model.entity.user.User;
 import cn.gson.oasys.services.role.RoleService;
 import cn.gson.oasys.services.system.MenuSysService;
-
+/** 
+* @Description:  
+* @Param:  
+* @return:  
+* @Author: 程煜
+* @Date: 2022/5/14 
+*/
 @Controller
 @RequestMapping("/")
 public class MenuSysController {
-
 	Logger log = LoggerFactory.getLogger(getClass());
-
 	@Autowired
 	private IndexDao iDao;
 	@Autowired
