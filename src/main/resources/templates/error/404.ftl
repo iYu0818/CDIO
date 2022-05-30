@@ -13,7 +13,7 @@
 <body>
 <div id="clock">
     <p class="date">...404 error page...</p>
-    <p class="date">您访问的页面丢失了，我们很快将它找回</p>
+    <p class="date">抱歉，您访问的页面丢失了，我们会努力的。</p>
     <p class="time">{{ time }}</p>
     <p class="text">{{ date }}</p>
     <p class="text">

@@ -48,7 +48,7 @@
 					</div>
 					<div class="form-group">
 						<input name="txtCode" type="text" id="txtCode" class="form-control" placeholder="验证码" style="width:210px; display:inline;">
-						<a title="看不清？点击换一张图片" href=""><img src="images/user/1.jpg" alt="" style="height:32px; margin-top:-3px; width:106px;"></a>
+						<a title="看不清？点击更换一张图片" href=""><img src="images/user/1.jpg" alt="" style="height:32px; margin-top:-3px; width:106px;"></a>
 					</div>
 					<div class="form-group">
 						<input type="submit" name="btnLogin" value="登录" class="btn btn-primary btn-block">

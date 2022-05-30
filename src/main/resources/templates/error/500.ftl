@@ -13,14 +13,11 @@
 <body>
 <div id="clock">
     <p class="date">...500 error page...</p>
-    <p class="date">服务刚出小差了，我们很快将它解决</p>
+    <p class="date">能力有限，抱歉老师</p>
     <p class="time">{{ time }}</p>
     <p class="text">{{ date }}</p>
     <p class="text">
         <a href="/index" style="color: #daf6ff;font-size: 14px;">回到首页</a>
-        <a href="https://gitee.com/aaluoxiang/oa_system" target="_blank" style="color: #daf6ff;font-size: 14px;">
-            查看项目地址
-        </a>
     </p>
 </div>
 <script>

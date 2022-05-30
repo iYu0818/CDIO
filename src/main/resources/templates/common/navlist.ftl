@@ -4,7 +4,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">帮助</h4>
+					<h4 class="modal-title">联系我们</h4>
 				</div>
 				<div class="modal-body" style="text-align: center;">
 					<h4>有疑问请联系成都信息工程大学软件工程学院软工191第15小组成员</h4>
