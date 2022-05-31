@@ -52,7 +52,7 @@ public class DeptController {
 			System.out.println("没有错误");
 			Dept adddept = deptdao.save(dept);
 			if("add".equals(xg)){
-				System.out.println("新增拉");
+				System.out.println("新增");
 				Position jinli = new Position();
 				jinli.setDeptid(adddept.getDeptId());
 				jinli.setName("经理");
@@ -188,9 +188,6 @@ public class DeptController {
 			deptdao.save(deptnow);
 			udao.save(newmanage);
 		}
-		
-		
-		
 		model.addAttribute("deptid",deptid);
 		return "/readdept";
 	}
