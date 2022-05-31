@@ -171,7 +171,7 @@ public class IndexController {
 	}
 	/**
 	 * 菜单查找
-	 * @param userId
+	 * @param
 	 * @param req
 	 * @return
 	 */
