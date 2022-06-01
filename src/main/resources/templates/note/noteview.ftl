@@ -116,10 +116,7 @@ a {
 a:hover {
 	text-decoration: none;
 }
-/*.col-md-2,
-			.col-md-3 {
-				border: 1px solid red;
-			}*/
+
 .bgc-w {
 	background-color: #fff;
 }

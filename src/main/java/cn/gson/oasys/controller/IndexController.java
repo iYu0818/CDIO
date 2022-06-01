@@ -58,13 +58,17 @@ import cn.gson.oasys.services.daymanage.DaymanageServices;
 import cn.gson.oasys.services.inform.InformRelationService;
 import cn.gson.oasys.services.inform.InformService;
 import cn.gson.oasys.services.system.MenuSysService;
-
+/**
+* @Description:用于主页的可视化界面的数据获取Controller
+* @Param:
+* @return:
+* @Author: 程煜
+* @Date: 2022/4/13
+*/
 @Controller
 @RequestMapping("/")
 public class IndexController {
-
 	Logger log = LoggerFactory.getLogger(getClass());
-
 	@Autowired
 	private MenuSysService menuService;
 	@Autowired
@@ -217,8 +221,6 @@ public class IndexController {
 		}
 		model.addAttribute("alist", aList);
 	}
-	
-	
 
 	/**
 	 * 控制面板主页
@@ -229,6 +231,7 @@ public class IndexController {
 	 */
 	@RequestMapping("test2")
 	public String test2(HttpSession session, Model model, HttpServletRequest request) {
+		//从Session域拿到用户的id用于区分不同的用户应有不同的菜单展示
 		Long userId = Long.parseLong(session.getAttribute("userId") + "");
 		User user=uDao.findOne(userId);
 		request.setAttribute("user", user);
@@ -246,8 +249,7 @@ public class IndexController {
 			map.put("userName", uDao.findOne((Long) map.get("user_id")).getUserName());
 			map.put("deptName", uDao.findOne((Long) map.get("user_id")).getDept().getDeptName());
 		}
-		// List<Map<String, Object>>
-		// noticeList=informRService.setList(noticeList1);
+		//通知
 		showalist(model, userId);
 		System.out.println("通知"+list);
 		model.addAttribute("noticeList", list);
@@ -272,7 +274,9 @@ public class IndexController {
 		model.addAttribute("prostatuslist", processstatus);
 		return "systemcontrol/control";
 	}
-	
+	/*
+	* 以下的方法就是用于各个的模块的数据返回
+	* */
 	@RequestMapping("test3")
 	public String test3() {
 		return "note/noteview";

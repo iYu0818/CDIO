@@ -13,7 +13,7 @@
 				function changepath(path) {
 					$('iframe').attr('src', path);
 				}
-				/*获取当前时间并显示在底部栏  */
+				/*获取当前时间并显示在主页视图底部栏  */
 				var day = new Date();
 				var week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
 				s = day.getFullYear() + "年";
@@ -65,7 +65,7 @@
 					$('.list-right').height(window.screen.height-50);
 				}
 
-				//点击按钮，左侧菜单栏收缩，右侧拉伸过去
+				//点这个按钮，左侧菜单栏收缩，右侧拉伸过去
 				$('.navbar-left li').on('click', function() {
 					
 					if($('#smallDiv').css('display') == "none") {

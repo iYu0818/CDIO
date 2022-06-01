@@ -31,6 +31,7 @@
 			}
 		});
 	</script>
+<#--仅用于测试-->
 <script type="text/javascript">
 	function funblue(){
 		console.log("点击变蓝了");
@@ -70,7 +71,7 @@
 		<li class="active">控制面板</li>
 	</ol>
 </div>
-<!--四个面板-->
+<!--顶部的四个面板-->
 <div class="container-fluid">
 	<div class="row">
 		<!--考勤签到-->
@@ -148,10 +149,13 @@
 								<li><a href="morelog">历史记录</a></li>
 							</ul>
 						</div>
-						<a  data-toggle="collapse"><button>
+						<a  data-toggle="collapse">
+							<button>
+                                  <#--视图最小化-->
 								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button></a>
-						<button>
+							</button>
+						</a>
+						<button><#--视图移除-->
 							<span class="glyphicon glyphicon-remove"></span>
 						</button>
 					</div>
@@ -179,9 +183,11 @@
 								<li><a href="infrommanage">公告通知</a></li>
 							</ul>
 						</div>
-						<a  ><button>
+						<a  >
+							<button>
 								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button></a>
+							</button>
+						</a>
 						<button>
 							<span class="glyphicon glyphicon-remove"></span>
 						</button>
@@ -579,22 +585,7 @@
 			"top":"-10px",
 			"height":"5px"
 		})
-		
-		/*  $(".col-md-7 ").children("div").addClass("drag-item");
-		$(".rightcolmd ").children("div").addClass("drag-item"); */
-		/* $("#calendar td").css({
-			"text-align":"center"
-		}) */
-			/* $(".drag-item").draggable({
-				revert:true,
-			}).droppable({
-				onDragOver:function(e,source){
-				},
-				onDrop:function(e,source){
-					$(source).insertAfter(this);
-					$(source).insertBefore(this);
-				}
-			});   */
+
 </script>
 <script src="js/littlecalendar.js"></script>
 <script src="js/highcharts/jquery.js"></script>

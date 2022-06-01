@@ -59,7 +59,7 @@
 								</div>
 								<div style="padding:10px;">
 									<span class="rcdescription">
-										盛大手机看的啥借口
+
 									</span>
 								</div>
 							</div>
@@ -141,19 +141,6 @@
 
 			editable: false,
 
-			/* events: [{
-
-				title: 'Long Event',
-
-				start: new Date(y, m, d - 5),
-
-				backgroundColor: 'red',
-
-				borderColor: 'red',
-
-				end: new Date(y, m, d - 2)
-
-			}, ]  */
 			
 			events:function(start, end, callback){
 				$.ajax({
