@@ -16,9 +16,6 @@ import cn.gson.oasys.model.entity.user.Position;
 @Table(name="aoa_role_power_list")
 //角色权限中间表
 public class Rolepowerlist {
-
-	
-
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_id")
@@ -63,8 +60,6 @@ public class Rolepowerlist {
 		this.pkId = pkId;
 	}
 
-
-
 	public Role getRoleId() {
 		return roleId;
 	}
@@ -93,11 +88,4 @@ public class Rolepowerlist {
 	public String toString() {
 		return "Rolepowerlist [pkId=" + pkId + ", roleId=" + roleId + ", check=" + check + "]";
 	}
-
-
-
-
-	
-	
-	
 }

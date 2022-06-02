@@ -13,9 +13,9 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
 				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+			</div>
+		</div>
+	</div>
 	<ul class="nav navbar-nav navbar-left" style="margin-left: -15px;">
 		<li><a href="#" class="green-none white"><span
 				class="glyphicon glyphicon-menu-hamburger"></span></a></li>
@@ -24,7 +24,7 @@
 	<ul class="nav navbar-nav navbar-right moredeep">
 		<li>
 			<a href="javascript:void(0)" class="green-none white" data-toggle="modal" data-target="#myModal">
-				<span class="glyphicon glyphicon glyphicon-jpy">帮助</span>
+				<span class="glyphicon glyphicon glyphicon-jpy">寻求帮助</span>
 			</a>
 		</li>
 		<li><a href="javascript:changepath('/infromlist');" class="green-none white"><span
