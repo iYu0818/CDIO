@@ -144,9 +144,7 @@
 					</div>
 
 				</div>
-				<!-- /.modal-content -->
 			</div>
-			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
 <script type="text/javascript" src="easyui/jquery.min.js"></script>

@@ -14,11 +14,8 @@ import javax.persistence.Table;
 import cn.gson.oasys.model.entity.user.User;
 
 /**
-
-
  * 
  * 考勤表
- * @author admin
  *
  */
 @Entity

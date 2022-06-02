@@ -19,11 +19,14 @@ import java.util.Random;
 import javax.imageio.ImageIO;
 
 /**
- * 验证码
- *
- */
+* @Description: 验证码随机生成
+* @Param:
+* @return:
+* @Author: 程煜
+* @Date: 2022/4/19
+*/
 public final class VerifyCodeUtils {
-	// 使用到Algerian字体，系统里没有的话需要安装字体，字体只显示大写，去掉了1,0,i,o几个容易混淆的字符23456789ABCDEFGHJKLMNPQRSTUVWXYZ
+	// 去掉了1,0,i,o几个容易混淆的字符23456789ABCDEFGHJKLMNPQRSTUVWXYZ
 	public static final String VERIFY_CODES = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
 	private static Random random;
 

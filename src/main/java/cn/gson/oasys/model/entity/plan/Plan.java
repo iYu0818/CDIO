@@ -23,7 +23,6 @@ import cn.gson.oasys.model.entity.user.User;
 @Table(name="aoa_plan_list")
 /**
  * 计划表
- * @author 宋佳
  *
  */
 public class Plan {

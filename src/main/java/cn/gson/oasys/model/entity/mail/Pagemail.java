@@ -2,8 +2,6 @@ package cn.gson.oasys.model.entity.mail;
 
 import java.util.Date;
 
-
-
 public class Pagemail {
 
 	private Long mailId;//邮件id

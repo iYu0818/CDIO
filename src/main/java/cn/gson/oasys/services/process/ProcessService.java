@@ -144,10 +144,9 @@ public class ProcessService {
 	}
   /**
    * 用户封装
-   * @param user
    * @param page
    * @param size
-   * @param val
+   * @param model
    * @return
    */
 	public void user(int page,int size,Model model){
