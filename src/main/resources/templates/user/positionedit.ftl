@@ -91,10 +91,6 @@ a:hover {
 
 <#include "/common/modalTip.ftl"/>
 <script type="text/javascript">
-	/* $('.successToUrl').on('click',function(){
-	 window.location.href='/testsysmenu';
-	 });
-	 */
 	function alertCheck(errorMess) {
 
 		$('.alert-danger').css('display', 'block');
@@ -143,7 +139,6 @@ a:hover {
 			//modalShow(1);
 			return true;
 		}
-		//	return false;
 	}
 
 </script>

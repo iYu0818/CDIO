@@ -75,14 +75,6 @@ a:hover {
 									<label class="control-label"><span>地址</span></label> 
 									<input name="deptAddr" class="form-control" value="${(dept.deptAddr)!''}"/>
 								</div>
-							<!-- 	<div class="col-md-6 form-group">
-									<label class="control-label"><span>上班时间</span></label> 
-									<input name="startTime" class="form-control" value="${(dept.startTime)!''}"/>
-								</div>
-								<div class="col-md-6 form-group">
-									<label class="control-label"><span>下班时间</span></label> 
-									<input name="endTime" class="form-control" value="${(dept.endTime)!''}"/>
-								</div> -->
 								<input type="hidden" name="deptId" value="${(dept.deptId)!''}">
 							</div>
 							<#if isread??>

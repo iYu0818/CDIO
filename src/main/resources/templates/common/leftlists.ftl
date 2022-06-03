@@ -1,10 +1,12 @@
-<div style="position: relative; margin-top: 20px;">
-			<input type="text" placeholder="查找..." class="search-input cha" /> <span
-				style="display: inline-block; height: 35px; width: 38px; background: red; position: absolute; text-align: center; line-height: 35px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background: #374850;">
-				<a href="#" class="chazhao"><span class="glyphicon glyphicon-search"
-					style="color: white;"></span></a>
-			</span>
-		</div>
+<#--查找未能正确使用，我给注释了-->
+<#--<div style="position: relative; margin-top: 20px;">-->
+<#--			<input type="text" placeholder="查找..." class="search-input cha" /> -->
+<#--	<span style="display: inline-block; height: 35px; width: 38px; background: red; position: absolute; text-align: center; line-height: 35px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background: #374850;">-->
+<#--		<a href="#" class="chazhao">-->
+<#--			<span class="glyphicon glyphicon-search" style="color: white;"></span>-->
+<#--		</a>-->
+<#--	</span>-->
+<#--</div>-->
 		<div class="panel-group" id="accordion"
 			style="margin-top: 10px; margin-left: -12px;">
 

@@ -99,11 +99,10 @@ a:hover {
 				<div class="box-footer">
 					<input class="btn btn-primary" id="save" type="submit" value="保存" />
 					<input class="btn btn-default" id="cancel" type="button" value="取消"
-						onclick="window.history.back();" />
+						onclick="window.history.back();"/>
 				</div>
 			</form>
 		</div>
-
 	</div>
 </div>
 
@@ -153,6 +152,5 @@ function check() {
 		//modalShow(1);
 		 return true;
 	}
-//	return false;
 }
 </script>

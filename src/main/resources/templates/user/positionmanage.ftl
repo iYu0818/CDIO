@@ -57,8 +57,9 @@ a:hover {
 								<td><span>${position.name}</span></td>
 								<td><span>${(position.level)!''}</span></td>
 								<td><span>${(position.describtion)!''}</span></td>
-								<td><a  href="positionedit?positionid=${position.id}" class="label xiugai"><span
-										class="glyphicon glyphicon-edit"></span> 修改</a> 
+								<td>
+									<a  href="positionedit?positionid=${position.id}" class="label xiugai">
+										<span class="glyphicon glyphicon-edit"></span> 修改</a>
 							</tr>
 						</#list>
 					</table>

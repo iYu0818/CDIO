@@ -57,7 +57,6 @@
 				</div>
 				<div class="modal-p">
 					<h2>操作成功</h2>
-					<!--<p style="">已回复</p>-->
 					<div class="modal-p">
 						<button type="button" class="btn btn-primary successToUrl" data-dismiss="modal">确定</button>
 					</div>
@@ -77,12 +76,9 @@
 			</div>
 
 		</div>
-		<!-- /.modal-content -->
 	</div>
-	<!-- /.modal-dialog -->
 </div>
 
-<!-- /.modal -->
 <script type="text/javascript" src="js/modalTip.js" ></script>
 
 <#-- 这里是执行返回成功的参数； -->

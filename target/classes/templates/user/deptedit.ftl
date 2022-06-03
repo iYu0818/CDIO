@@ -27,10 +27,6 @@ a:hover {
 		<div class="col-md-2">
 			<h1 style="font-size: 24px; margin: 0;" class="">部门管理</h1>
 		</div>
-		<div class="col-md-10 text-right">
-			<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> >
-			<a disabled="disabled">部门管理</a>
-		</div>
 	</div>
 	<div class="row" style="padding-top: 15px;">
 		<div class="col-md-12">
@@ -79,14 +75,6 @@ a:hover {
 									<label class="control-label"><span>地址</span></label> 
 									<input name="deptAddr" class="form-control" value="${(dept.deptAddr)!''}"/>
 								</div>
-							<!-- 	<div class="col-md-6 form-group">
-									<label class="control-label"><span>上班时间</span></label> 
-									<input name="startTime" class="form-control" value="${(dept.startTime)!''}"/>
-								</div>
-								<div class="col-md-6 form-group">
-									<label class="control-label"><span>下班时间</span></label> 
-									<input name="endTime" class="form-control" value="${(dept.endTime)!''}"/>
-								</div> -->
 								<input type="hidden" name="deptId" value="${(dept.deptId)!''}">
 							</div>
 							<#if isread??>
