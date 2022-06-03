@@ -112,6 +112,7 @@ cn\gson\oasys\model\dao\discuss\ReplyDao.class
 cn\gson\oasys\model\entity\mail\Pagemail.class
 cn\gson\oasys\controller\note\NoteController.class
 cn\gson\oasys\model\dao\user\UserDao.class
+cn\gson\oasys\exception\WebControllerException.class
 cn\gson\oasys\controller\chat\ReplyController.class
 cn\gson\oasys\model\dao\discuss\VoteTitleListDao.class
 cn\gson\oasys\model\entity\mail\Mailnumber.class
