@@ -13,14 +13,11 @@
 <body>
 <div id="clock">
     <p class="date">...404 error page...</p>
-    <p class="date">抱歉，您访问的页面丢失了，我们会努力的。</p>
+    <p class="date">抱歉，您访问的页面丢失了，请联系CUIT软件工程第15小组！！！</p>
     <p class="time">{{ time }}</p>
     <p class="text">{{ date }}</p>
     <p class="text">
         <a href="/index" style="color: #daf6ff;font-size: 14px;">回到首页</a>
-        <a href="https://gitee.com/aaluoxiang/oa_system" target="_blank" style="color: #daf6ff;font-size: 14px;">
-            查看项目地址
-        </a>
     </p>
 </div>
 <script>

@@ -55,14 +55,15 @@
 	}
 </script>
 <div class="head-show" style="position: relative; height: 76px;">
-	<h3 style="display: inline-block; float: left;margin-left: 16px;">控制面板
-		<div style="display: inline-block;margin-left: 20px;">
-			<span class="thiscolor toblue" style="background-color:#c11eb0" onclick="funblue();"></span>
-			<span class="thiscolor togreen" style="background-color:#00a65a" onclick="fungreen();"></span> 
-			<span class="thiscolor toyellow" style="background-color:#f39c12" onclick="funyellow();"></span> 
-			<span class="thiscolor tored" style="background-color:#dd4b39" onclick="funred();"></span>
-		</div>
-	</h3>
+<#--	更改系统的颜色，js有点问题，所以注释了-->
+<#--	<h3 style="display: inline-block; float: left;margin-left: 16px;">-->
+<#--		<div style="display: inline-block;margin-left: 20px;">-->
+<#--			<span class="thiscolor toblue" style="background-color:#c11eb0" onclick="funblue();"></span>-->
+<#--			<span class="thiscolor togreen" style="background-color:#00a65a" onclick="fungreen();"></span> -->
+<#--			<span class="thiscolor toyellow" style="background-color:#f39c12" onclick="funyellow();"></span> -->
+<#--			<span class="thiscolor tored" style="background-color:#dd4b39" onclick="funred();"></span>-->
+<#--		</div>-->
+<#--	</h3>-->
 	<ol class="breadcrumb pull-right"
 		style="float: right; margin-top: 20px; background: transparent;">
 		<li><a href="#"> <span class="glyphicon glyphicon-home"></span>
@@ -75,13 +76,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<!--考勤签到-->
-		<div class="col-md-3" >
+		<div class="col-md-4" >
 		    <div id="refresh">
 				<#include "signin.ftl">
 			</div>
 		</div>
 		<!--文件管理-->
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<div class="jichu filecolor">
 				<div class="wenzi">
 					<h2>${filenum}</h2>
@@ -96,7 +97,7 @@
 			</div>
 		</div>
 		<!--通讯录-->
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<div class="jichu tongxun">
 				<div class="wenzi">
 					<h2>${directornum}</h2>
@@ -111,20 +112,20 @@
 			</div>
 		</div>
 		<!--讨论区-->
-		<div class="col-md-3">
-			<div class="jichu chat">
-				<div class="wenzi">
-					<h2>${discussnum}</h2>
-					<p>讨论区</p>
-				</div>
-				<div class="iconfont">
-					<span class="glyphicon glyphicon-comment"></span>
-				</div>
-				<a href="chatlist" class="moreduo"> 更多 <span
-					class="glyphicon glyphicon-circle-arrow-right"></span>
-				</a>
-			</div>
-		</div>
+<#--		<div class="col-md-3">-->
+<#--			<div class="jichu chat">-->
+<#--				<div class="wenzi">-->
+<#--					<h2>${discussnum}</h2>-->
+<#--					<p>测试</p>-->
+<#--				</div>-->
+<#--				<div class="iconfont">-->
+<#--					<span class="glyphicon glyphicon-comment"></span>-->
+<#--				</div>-->
+<#--				<a href="chatlist" class="moreduo"> 更多 <span-->
+<#--					class="glyphicon glyphicon-circle-arrow-right"></span>-->
+<#--				</a>-->
+<#--			</div>-->
+<#--		</div>-->
 	</div>
 </div>
 <!--右侧刷新的内容块-->

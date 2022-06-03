@@ -13,7 +13,7 @@
 <body>
 <div id="clock">
     <p class="date">...500 error page...</p>
-    <p class="date">能力有限，抱歉老师</p>
+    <p class="date">服务器异常，请联系CUIT第15小组成员</p>
     <p class="time">{{ time }}</p>
     <p class="text">{{ date }}</p>
     <p class="text">

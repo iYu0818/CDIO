@@ -75,15 +75,6 @@
 				</li>
 			</ul>
 		</li>
-
-		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown"><span
-				class="glyphicon glyphicon-time"></span></a>
-				
-		<ul id="historypanel" class="dropdown-menu"
-				style="position: absolute; background-color: #222d32;">
-				<#include "/user/userlog.ftl"/>
-		</ul>
-	</li>
 </ul>
 </div>
 <script>

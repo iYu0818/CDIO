@@ -56,6 +56,7 @@ public class StatusSysController {
 	@RequestMapping("statustable")
 	public String statusTable(HttpServletRequest req){
 		if(!StringUtils.isEmpty(req.getParameter("name"))){
+			//用来模糊查询拼接的字符串
 			String name="%"+req.getParameter("name")+"%";
 			req.setAttribute("statusList",statusDao.findByStatusNameLikeOrStatusModelLike(name, name));
 		}

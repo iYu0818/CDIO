@@ -118,6 +118,5 @@ function check() {
 		//modalShow(1);
 		 return true;
 	}
-//	return false;
 }
 </script>
