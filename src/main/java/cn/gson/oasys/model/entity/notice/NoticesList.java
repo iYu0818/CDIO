@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "aoa_notice_list")
 public class NoticesList {
-
+	//主键id
 	@Id
 	@Column(name = "notice_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

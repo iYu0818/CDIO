@@ -25,6 +25,8 @@ public interface IndexDao extends JpaRepository<SystemMenu, Long> {
 	// 查找二级菜单栏
 	List<SystemMenu> findByParentIdNotOrderBySortId(Long parentId);
 
+
+	//两种措施
 	// 1、上移下移按钮先改变其他的排序值
 	@Query("update SystemMenu menu set menu.sortId=(:sortId) where menu.parentId = :parentId and menu.sortId=(:sortId - :arithNum)")
 	@Modifying
