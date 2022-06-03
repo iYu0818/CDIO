@@ -2,8 +2,6 @@ package cn.gson.oasys.model.entity.process;
 
 import java.util.Date;
 
-
-
 public class AubUser {
 
 	private Long processId;

@@ -36,7 +36,7 @@ import cn.gson.oasys.services.system.MenuSysService;
 * @Param:  
 * @return:  
 * @Author: 程煜
-* @Date: 2022/5/14 
+* @Date: 2022/05/02
 */
 @Controller
 @RequestMapping("/")
@@ -91,10 +91,12 @@ public class MenuSysController {
 		Long menuId = Long.parseLong(req.getParameter("menuid"));
 		Integer sortId = Integer.parseInt(req.getParameter("sortid"));
 		Integer arithNum = Integer.parseInt(req.getParameter("num"));
+
 		log.info("parentId:{}", parentId);
 		log.info("menuId:{}", menuId);
 		log.info("sortId:{}", sortId);
 		log.info("arithNum:{}", arithNum);
+
 		if (arithNum == 1) {
 			int a1 = menuService.changeSortId(sortId, arithNum, parentId);
 			int a2 = menuService.changeSortId2(sortId, arithNum, menuId);
@@ -166,7 +168,7 @@ public class MenuSysController {
 		if (!ResultEnum.SUCCESS.getCode().equals(res.getCode())) {
 			List<Object> list = new MapToList<>().mapToList(res.getData());
 			req.setAttribute("errormess", list.get(0).toString());
-			// 代码调试阶段，下面是错误的相关信息；
+			//下面是错误的相关信息；
 			System.out.println("list错误的实体类信息：" + menu);
 			System.out.println("list错误详情:" + list);
 			System.out.println("list错误第一条:" + list.get(0));

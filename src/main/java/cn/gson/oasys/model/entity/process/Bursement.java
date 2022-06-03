@@ -16,10 +16,9 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import cn.gson.oasys.model.entity.user.User;
-
+//费用报销表
 @Table
 @Entity(name="aoa_bursement")
-//费用报销表
 public class Bursement {
 
 	@Id

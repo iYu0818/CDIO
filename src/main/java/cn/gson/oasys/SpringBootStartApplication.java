@@ -1,14 +1,6 @@
 package cn.gson.oasys;
-
-/**
- * @author 03010570
- * @date 2020/03/28
- * describe:
- */
-
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-
 /**
  * 修改启动类，继承 SpringBootServletInitializer 并重写 configure 方法
  */

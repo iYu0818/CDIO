@@ -64,9 +64,6 @@ public class NotepaperService {
 			file.transferTo(targetFile);
 			System.out.println(newFileName+"mmm");
 			String imgpath=targetFile.getPath().replace("\\", "/").replace(rootpath, "");
-			
-			System.out.println(imgpath);
-			
 			return imgpath;
 		}else{
 			return null;

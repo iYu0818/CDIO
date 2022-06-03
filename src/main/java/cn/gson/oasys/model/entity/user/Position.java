@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 /**
  * 职位类
- * @author Administrator
  *
  */
 @Entity

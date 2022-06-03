@@ -15,9 +15,7 @@ import cn.gson.oasys.model.entity.task.Tasklist;
 import cn.gson.oasys.model.entity.user.User;
 
 public interface TaskDao extends JpaRepository<Tasklist, Long>{
-  
-	
-	
+
 	//查找是否置顶的xx
 	
 	Page<Tasklist> findByUsersId(User userId,Pageable page);
@@ -76,9 +74,6 @@ public interface TaskDao extends JpaRepository<Tasklist, Long>{
 	//根据任务id和title的模糊查询
 	@Query("from Tasklist tl where tl.taskId in (?1) and tl.title like  %?2%")
 	Page<Tasklist> findtaskByTitleLikeAndTaskId(List<Long> taskids,String title,Pageable pa);
-
-
-
 
 	Page<Tasklist> findByTickingIsNotNull(Pageable pa);
 

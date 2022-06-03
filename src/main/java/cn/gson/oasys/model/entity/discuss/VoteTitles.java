@@ -22,10 +22,7 @@ public class VoteTitles{
 	@Column(name="title_id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private  Long titleId;
-	
-//	@Column(name="vote_id")				//投票id
-//	private Long voteId;				
-	
+
 	private String  title;				//投票标题
 	
 	private String color;				//进度条颜色
@@ -45,16 +42,6 @@ public class VoteTitles{
 	public void setTitleId(Long titleId) {
 		this.titleId = titleId;
 	}
-
-//	public Long getVoteId() {
-//		return voteId;
-//	}
-//
-//	public void setVoteId(Long voteId) {
-//		this.voteId = voteId;
-//	}
-	
-	
 
 	public String getTitle() {
 		return title;

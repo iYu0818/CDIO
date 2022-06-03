@@ -6,9 +6,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 /**
  * 系统状态总表
- * 
- * @author luoxiang
- *
  */
 @Entity
 @Table(name = "aoa_status_list")

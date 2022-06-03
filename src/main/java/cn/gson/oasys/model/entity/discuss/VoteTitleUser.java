@@ -19,12 +19,7 @@ public class VoteTitleUser{
 		@Column(name="vote_title_user_id")
 		@GeneratedValue(strategy=GenerationType.IDENTITY)
 		private Long voteTitleUserId;
-			
-//		@Column(name="title_id")	//标题
-//		private Long  titleId;
-//		
-//		@Column(name="user_id")		//用户id
-//		private Long  userId;
+
 		
 		@Column(name="vote_id")		//投票id
 		private Long  voteId;
