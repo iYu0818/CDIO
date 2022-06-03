@@ -7,10 +7,7 @@
 <#include "/common/commoncss.ftl">
 <link href="css/common/checkbox.css" rel="stylesheet" />
 <style type="text/css">
-/* .{
-			width:1100px;
-			
-			} */
+
 a {
 	color: black;
 }
@@ -80,10 +77,6 @@ color:blue;
 	<div class="row" style="padding-top:10px">
 		<div class="col-md-2">
 			<h1 style="font-size: 24px; margin: 0;" class="">考勤管理</h1>
-		</div>
-		<div class="col-md-10 text-right">
-			<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> >
-			<a disabled="disabled">考勤管理</a>
 		</div>
 	</div>
 

@@ -17,11 +17,6 @@
 					<div class="col-md-2">
 						<h1 style="font-size:24px;margin: 0;" class="">考勤周报表</h1>
 					</div>
-					<div class="col-md-10 text-right">
-						<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a>
-						>
-						<a disabled="disabled">考勤周报表</a>
-					</div>
 				</div>
 		<div class="row">
 	<div class="col-md-12">

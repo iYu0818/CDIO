@@ -19,11 +19,6 @@
 					<div class="col-md-10">
 						<h1 >计划报表(日计划)</h1>
 					</div>
-					<div class="col-md-2 text-right">
-						<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a>
-						>
-						<a disabled="disabled">计划报表</a>
-					</div>
 				</div>
 		<div class="col-md-12">
 		<div class="box">

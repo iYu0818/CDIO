@@ -18,10 +18,6 @@ a:hover {
 	<div class="col-md-2">
 		<h1 style="font-size: 24px; margin: 0;" class="">职位管理</h1>
 	</div>
-	<div class="col-md-10 text-right">
-		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">职位管理</a>
-	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
 	<div class="col-md-12">
@@ -34,7 +30,7 @@ a:hover {
 						<span class="glyphicon glyphicon-plus"></span> 新增
 					</a>
 				</h3>
-				<!-- <div class="box-tools">
+				<div class="box-tools">
 					<div class="input-group" style="width: 150px;">
 						<input type="text" class="form-control input-sm"
 							placeholder="查找..." />
@@ -43,7 +39,7 @@ a:hover {
 								class="glyphicon glyphicon-search"></span></a>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 			<!--盒子身体-->
 			<div class="box-body no-padding">

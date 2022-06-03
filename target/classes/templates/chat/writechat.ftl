@@ -27,10 +27,6 @@ border-radius: 5px;
 	<div class="col-md-2">
 		<h1 style="font-size: 24px; margin: 0;" class="">讨论区编辑</h1>
 	</div>
-	<div class="col-md-10 text-right">
-		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">讨论区编辑</a>
-	</div>
 </div>
 
 <div class="bgc-w box box-primary" style="min-height: 613px;margin-top:20px;">

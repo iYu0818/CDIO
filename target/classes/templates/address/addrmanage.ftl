@@ -79,10 +79,6 @@ li.activee>a {
 					</a>
 		</h1>
 	</div>
-	<div class="col-md-10 text-right">
-		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">通讯录</a>
-	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
 	<div class="col-md-3">

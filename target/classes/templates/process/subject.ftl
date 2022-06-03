@@ -5,9 +5,6 @@ list-style-type:none;
 .cur{
 cursor: pointer;
 }
-/* .cur:hover{
-color:blue;
-} */
 .panel {
     margin-bottom: 0px;
     background-color: #fff; 

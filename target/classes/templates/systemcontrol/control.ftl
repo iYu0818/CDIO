@@ -64,13 +64,7 @@
 <#--			<span class="thiscolor tored" style="background-color:#dd4b39" onclick="funred();"></span>-->
 <#--		</div>-->
 <#--	</h3>-->
-	<ol class="breadcrumb pull-right"
-		style="float: right; margin-top: 20px; background: transparent;">
-		<li><a href="#"> <span class="glyphicon glyphicon-home"></span>
-				首页
-		</a></li>
-		<li class="active">控制面板</li>
-	</ol>
+
 </div>
 <!--顶部的四个面板-->
 <div class="container-fluid">

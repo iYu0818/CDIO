@@ -122,10 +122,6 @@ border-top: 1px solid #2196F3;
 	<div class="col-md-2">
 		<h1 style="font-size: 24px; margin: 0;" class="">${(map.typename)!''}</h1>
 	</div>
-	<div class="col-md-10 text-right">
-		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">${(map.typename)!''}</a>
-	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
 	<div class="col-md-12">
