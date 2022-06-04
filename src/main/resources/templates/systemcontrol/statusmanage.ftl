@@ -27,9 +27,9 @@ a:hover {
 				<!--盒子头-->
 				<div class="box-header">
 					<h3 class="box-title">
-						<a href="statusedit" class="label label-success" style="padding: 5px;">
-							<span class="glyphicon glyphicon-plus"></span> 新增
-						</a>
+<#--						<a href="statusedit" class="label label-success" style="padding: 5px;">-->
+<#--							<span class="glyphicon glyphicon-plus"></span> 新增-->
+<#--						</a>-->
 						<a href="" class="label label-success" style="padding: 5px;margin-left:5px;">
 							<span class="glyphicon glyphicon-refresh"></span> 刷新
 						</a>

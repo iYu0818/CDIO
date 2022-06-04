@@ -14,15 +14,12 @@ a:hover {
 .table>tbody>tr>td{
     border-top: 1px solid rgba(245, 245, 220, 0.29);
     }
-
 </style>
-
 <div class="row" style="padding-top: 10px;">
 	<div class="col-md-2">
 		<h1 style="font-size: 24px; margin: 0;" class="">菜单管理</h1>
 	</div>
 </div>
-
 <div class="row" style="padding-top: 15px;">
 	<div class="col-md-12">
 		<!--id="container"-->

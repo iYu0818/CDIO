@@ -81,7 +81,8 @@ public class DeptController {
 		}
 		return "user/deptedit";
 	}
-	
+
+	/*级联查询部门经理*/
 	@RequestMapping("readdept")
 	public String readdept(@RequestParam(value = "deptid") Long deptId,Model model){
 		
@@ -146,7 +147,8 @@ public class DeptController {
 		return "/deptmanage";
 		
 	}
-	
+
+	/*部门经理管理更换*/
 	@RequestMapping("deptmanagerchange")
 	public String deptmanagerchange(@RequestParam(value="positionid",required=false) Long positionid,
 			@RequestParam(value="changedeptid",required=false) Long changedeptid,
@@ -154,8 +156,6 @@ public class DeptController {
 			@RequestParam(value="newmanageid",required=false) Long newmanageid,
 			@RequestParam("deptid") Long deptid,
 			Model model){
-		System.out.println("oldmanageid:"+oldmanageid);
-		System.out.println("newmanageid:"+newmanageid);
 		Dept deptnow = deptdao.findOne(deptid);
 		if(oldmanageid!=null){
 			User oldmanage = udao.findOne(oldmanageid);

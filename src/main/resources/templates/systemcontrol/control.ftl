@@ -55,15 +55,6 @@
 	}
 </script>
 <div class="head-show" style="position: relative; height: 76px;">
-<#--	更改系统的颜色，js有点问题，所以注释了-->
-<#--	<h3 style="display: inline-block; float: left;margin-left: 16px;">-->
-<#--		<div style="display: inline-block;margin-left: 20px;">-->
-<#--			<span class="thiscolor toblue" style="background-color:#c11eb0" onclick="funblue();"></span>-->
-<#--			<span class="thiscolor togreen" style="background-color:#00a65a" onclick="fungreen();"></span> -->
-<#--			<span class="thiscolor toyellow" style="background-color:#f39c12" onclick="funyellow();"></span> -->
-<#--			<span class="thiscolor tored" style="background-color:#dd4b39" onclick="funred();"></span>-->
-<#--		</div>-->
-<#--	</h3>-->
 
 </div>
 <!--顶部的四个面板-->
@@ -105,21 +96,7 @@
 				</a>
 			</div>
 		</div>
-		<!--讨论区-->
-<#--		<div class="col-md-3">-->
-<#--			<div class="jichu chat">-->
-<#--				<div class="wenzi">-->
-<#--					<h2>${discussnum}</h2>-->
-<#--					<p>测试</p>-->
-<#--				</div>-->
-<#--				<div class="iconfont">-->
-<#--					<span class="glyphicon glyphicon-comment"></span>-->
-<#--				</div>-->
-<#--				<a href="chatlist" class="moreduo"> 更多 <span-->
-<#--					class="glyphicon glyphicon-circle-arrow-right"></span>-->
-<#--				</a>-->
-<#--			</div>-->
-<#--		</div>-->
+
 	</div>
 </div>
 <!--右侧刷新的内容块-->
@@ -127,40 +104,6 @@
 	style="margin-top: 20px;  margin-bottom: 50px;">
 	<div class="row ">
 		<div class="col-md-7 gridly">
-		<!-- 统计 -->
-		<div class="panel panel-default box-show green-box">
-				<div class="panel-heading box-show-heading"
-					style="background: white;">
-					<div class="panel-title" style="display: inline-block;">
-						<h4>本周系统使用统计</h4>
-					</div>
-					<div class="pull-right right-btn-group dropdown"
-						style="display: inline-block;">
-						<div style="display: inline-block;">
-							<button data-toggle="dropdown" >
-								<span class="glyphicon glyphicon-menu-hamburger"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="morelog">历史记录</a></li>
-							</ul>
-						</div>
-						<a  data-toggle="collapse">
-							<button>
-                                  <#--视图最小化-->
-								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button>
-						</a>
-						<button><#--视图移除-->
-							<span class="glyphicon glyphicon-remove"></span>
-						</button>
-					</div>
-				</div>
-				
-				<div id="line" class="shrink" style="min-width: 100px; height: 280px; border-top:solid 1px #eee; margin: 0 auto">
-				</div>
-			</div>
-		
-		
 			<!--第一个公告通知-->
 			<div class="panel panel-default box-show green-box">
 				<div class="panel-heading box-show-heading"
@@ -333,148 +276,8 @@
 
 		<!--内容右侧5个格子；-->
 		<div class="rightcolmd">
-		<!-- 任务完成排行 -->
-		<div class="panel panel-default box-show green-box">
-				<div class="panel-heading box-show-heading"
-					style="background: white;">
-					<div class="panel-title" style="display: inline-block;">
-						<h4>
-							任务完成排行
-						</h4>
-					</div>
-					<div class="pull-right right-btn-group btn-color dropdown"
-						style="display: inline-block;">
-						<div style="display: inline-block;">
-							<button data-toggle="dropdown" >
-								<span class="glyphicon glyphicon-menu-hamburger"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="mytask">我的任务</a></li>
-							</ul>
-						</div>
-						<a href="#column" data-toggle="collapse"><button >
-								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button></a>
-						<button >
-							<span class="glyphicon glyphicon-remove"></span>
-						</button>
-					</div>
-				</div>
-				
-				<div id="column" class="shrink" style="min-width: 100px; height: 280px; margin: 0 auto;border-top:solid 1px #eee; ">
-				 
-				</div>
-				
-			</div>
-		
 			<!--第四个格子-->
-			<!-- 行事历 -->
-			<div class="panel" style="background-color: #00c86c;color: white;">
-				<div class="" style="border-bottom: 1px solid #94d294;;">
-					<div class="panel-title" style="display: inline-block;">
-						<h4><span class="glyphicon glyphicon-calendar"></span> 行事历</h4>
-					</div>
-					<div class="pull-right right-btn-group btn-color dropdown"
-						style="display: inline-block;">
-						<div style="display: inline-block;">
-							<button data-toggle="dropdown" style="background: #18e89d !important;">
-								<span class="glyphicon glyphicon-menu-hamburger"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="daymanage">日程管理</a></li>
-								<li><a href="daycalendar">我的日历</a></li>
-							</ul>
-						</div>
-						<a   ><button style="background: #18e89d !important;">
-								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button></a>
-						<button style="background: #18e89d !important;">
-							<span class="glyphicon glyphicon-remove"></span>
-						</button>
-					</div>
-				</div>
-				<div  class="shrink"  style="height: 280px;padding: 10px;">
-				  
-				   <table cellpadding="2" style="border-collapse: collapse;width:100%;" class="calendar" id="calendar">
-			
-						<div >
-						<span class="glyphicon glyphicon-chevron-left month left" style="cursor:pointer;"></span>
-						<span class="glyphicon glyphicon-chevron-right month right" style="float:right;cursor:pointer;"></span>
-						<div class="yearmonth" style="text-align:center;width:70%;display:inline;margin-left: 154px;"><div>
-						</div>
-			<tbody>
-			
-			<tr style="color:white;  text-align: center !important;">
-				<th style="text-align: center !important;">一</th>
-				<th style="text-align: center !important;">二</th>
-				<th style="text-align: center !important;">三</th>
-				<th style="text-align: center !important;">四</th>
-				<th style="text-align: center !important;">五</th>
-				<th style="text-align: center !important;">六</th>
-				<th style="text-align: center !important;">日</th>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			<tr>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-				<td><span id="span"></span><span class="icon"></span></td>
-			</tr>
-			</tbody>
-		</table>	
-				<div id="blockdiv" style="
-				background-color: white; display: none; z-index: 999; border: 1px solid rgb(105, 103, 103); 
-				position: absolute; color: rgb(105, 103, 103);text-align: center; ">dfdfdf</div>
-				</div>
-				
-			</div>
+
 			<!--第五个格子-->
 			<div class="panel panel-default box-show green-box">
 				<div class="panel-heading box-show-heading"

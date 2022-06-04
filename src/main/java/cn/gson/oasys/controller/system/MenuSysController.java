@@ -125,7 +125,6 @@ public class MenuSysController {
 		if(!StringUtils.isEmpty(req.getAttribute("success"))){
 			req.setAttribute("success", req.getAttribute("success"));
 		}
-		
 		List<SystemMenu> parentList=iDao.findByParentIdOrderBySortId(0L);
 		req.setAttribute("parentList", parentList);
 		HttpSession session = req.getSession();

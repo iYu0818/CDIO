@@ -23,9 +23,9 @@
 	<!--右侧导航栏-->
 	<ul class="nav navbar-nav navbar-right moredeep">
 		<li>
-			<a href="javascript:void(0)" class="green-none white" data-toggle="modal" data-target="#myModal">
-				<span class="glyphicon glyphicon glyphicon-jpy">寻求帮助</span>
-			</a>
+<#--			<a href="javascript:void(0)" class="green-none white" data-toggle="modal" data-target="#myModal">-->
+<#--				<span class="glyphicon glyphicon glyphicon-jpy">寻求帮助</span>-->
+<#--			</a>-->
 		</li>
 		<li><a href="javascript:changepath('/infromlist');" class="green-none white"><span
 				class="glyphicon glyphicon-bell"></span>
