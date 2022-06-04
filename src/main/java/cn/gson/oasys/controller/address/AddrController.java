@@ -476,6 +476,7 @@ public class AddrController {
 	
 	/**
 	 外部通讯录
+	 按字母查找
 	 * @return
 	 */
 	@RequestMapping("outaddresspaging")
@@ -509,6 +510,7 @@ public class AddrController {
 	
 	/**
 	 * 内部通讯录表格，并处理分页
+	 * 按字母查找
 	 * @return
 	 */
 	@RequestMapping("inaddresspaging")

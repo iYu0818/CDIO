@@ -51,7 +51,10 @@ public class DaymanageController {
 	TypeDao typedao;
 	@Autowired
 	ProcessService ps;
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping("daymanage")
 	private String daymanage(@SessionAttribute("userId") Long userid,
 			Model model,@RequestParam(value="page",defaultValue="0") int page,
@@ -77,7 +80,10 @@ public class DaymanageController {
 		model.addAttribute("ismyday", 1);
 		return "daymanage/daymanage";
 	}
-	
+
+	/**
+	 * 分页显示
+	 */
 	@RequestMapping("daymanagepaging")
 	private String daymanagepaging(@SessionAttribute("userId") Long userid,
 			Model model,@RequestParam(value="page",defaultValue="0") int page,
@@ -101,6 +107,8 @@ public class DaymanageController {
 		model.addAttribute("ismyday", 1);
 		return "daymanage/daymanagepaging";
 	}
+
+
 	@RequestMapping("aboutmeday")
 	private String aboutmeday(@SessionAttribute("userId") Long userid,
 			Model model,@RequestParam(value="page",defaultValue="0") int page,
@@ -155,7 +163,10 @@ public class DaymanageController {
 		
 		return "daymanage/daymanagepaging";
 	}
-	
+
+	/**
+	 * 日程编辑（增加、修改）
+	 */
 	@RequestMapping("dayedit")
 	private String dayedit(@RequestParam(value="rcid",required=false) Long rcid,
 			@RequestParam(value="page",defaultValue="0") int page,
@@ -176,17 +187,16 @@ public class DaymanageController {
 		model.addAttribute("rc",rc);
 		return "daymanage/editday";
 	}
-	
+
+	/**
+	 * 保存增加或修改的信息
+	 */
 	@RequestMapping("addandchangeday")
 	public String addandchangeday(ScheduleList scheduleList,@RequestParam("shareuser") String shareuser,BindingResult br,
 			@SessionAttribute("userId") Long userid){
 		User user = udao.findOne(userid);
-		System.out.println(shareuser);
 		List<User> users = new ArrayList<>();
-		
-		System.out.println(users.size());
 		StringTokenizer st = new StringTokenizer(shareuser, ";");
-		
 		while (st.hasMoreElements()) {
 			users.add(udao.findByUserName(st.nextToken()));
 		}
@@ -200,7 +210,11 @@ public class DaymanageController {
 		daydao.save(scheduleList);
 		return "/daymanage";
 	}
-	
+
+	/**
+	 * 删除日程
+	 * @return
+	 */
 	@RequestMapping("dayremove")
 	public String dayremove(@RequestParam(value="rcid") Long rcid){
 		ScheduleList rc = daydao.findOne(rcid);
@@ -219,21 +233,10 @@ public class DaymanageController {
 		return "daymanage/daycalendar";
 	}
 
-//	@RequestMapping("mycalendarload")
-//	public void mycalendarload(@SessionAttribute("userId") Long userid,HttpServletResponse response) throws IOException{
-//		List<ScheduleList> se = dayser.aboutmeschedule(userid);
-//		
-//		for (ScheduleList scheduleList : se) {
-//			System.out.println(scheduleList);
-//		}
-//		
-//		String json = JSONObject.toJSONString(se);
-//		response.setHeader("Cache-Control", "no-cache");
-//		response.setContentType("text/json;charset=UTF-8");
-//		response.getWriter().write(json);
-//		
-//	}
-	
+	/**
+	 * 加载我的日历
+	 * @return
+	 */
 	@RequestMapping("mycalendarload")
 	public @ResponseBody List<ScheduleList> mycalendarload(@SessionAttribute("userId") Long userid,HttpServletResponse response) throws IOException{
 		List<ScheduleList> se = dayser.aboutmeschedule(userid);

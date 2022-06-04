@@ -342,18 +342,5 @@ public class FileController {
 	
 	
 
-	// @RequestMapping(value = "pathin",method = RequestMethod.POST)
-	// public @ResponseBody Map<Integer, Object>
-	// pathin(@RequestParam("pathid")Long pathid){
-	// FilePath filepath = fpdao.findOne(pathid);
-	// if(null == filepath)
-	// return null;
-	//
-	// Map<Integer, Object> maps = new HashMap<>();
-	// maps.put(1, fs.findpath(filepath.getId()));
-	// maps.put(2, fs.findfileBypath(filepath));
-	// System.out.println(maps);
-	// return maps;
-	// }
 
 }

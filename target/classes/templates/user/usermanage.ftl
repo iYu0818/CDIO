@@ -1,5 +1,5 @@
 <#include "/common/commoncss.ftl">
-<#include "/common/modalTip.ftl"/> 
+<#include "/common/modalTip.ftl"/>
 <style type="text/css">
 a {
 	color: black;
@@ -23,9 +23,11 @@ a:hover {
 	<div class="row" style="padding-top: 15px;">
 		<div class="col-md-12 thistable">
 			<!--id="container"-->
-			<#include "/user/usermanagepaging.ftl"/>
+			<#include "usermanagepaging.ftl"/>
 		</div>
 	</div>
+
+<#--查找用户的搜索框-->
 <script type="text/javascript">
 	$(".thistable").on("click",".usersearchgo",function(){
 		var usersearch = $(".thistable .usersearch").val();

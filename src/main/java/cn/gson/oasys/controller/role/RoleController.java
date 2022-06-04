@@ -1,7 +1,5 @@
 package cn.gson.oasys.controller.role;
 
-
-
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,8 +49,7 @@ public class RoleController {
 	private RoleService rservice;
 	@Autowired
 	private RolepowerlistDao  rpdao;
-	
-	
+
 	/**
 	 * 角色管理
 	 * @return

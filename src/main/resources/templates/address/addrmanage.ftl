@@ -340,10 +340,6 @@ li.activee>a {
 				$('#thisul').load("addtypename",{typename:typename},function(response,status,xhr){
 					modalShow(1);
 					$('.addtypename').val("");
-					/* console.log("听说这是执行成功会返回的的？？？");
-					console.log("response:"+response);
-					console.log("status:"+status);
-					console.log("xhr:"+xhr); */
 				});
 			})
 			

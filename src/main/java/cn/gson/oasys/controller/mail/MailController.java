@@ -442,6 +442,7 @@ public class MailController {
 		model.addAttribute("url", "mailpaixu");
 		return "mail/mailmanage";
 	}
+
 	/**
 	 * 账号各种排序
 	 * 和查询
@@ -455,7 +456,6 @@ public class MailController {
 		//得到传过来的值
 		String val =null;
 		if(!StringUtil.isEmpty(request.getParameter("val"))){
-			
 		 val = request.getParameter("val");
 		}
 		Page<Mailnumber> pagelist=mservice.index(page, size, tu, val,model);

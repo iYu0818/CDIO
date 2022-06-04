@@ -31,7 +31,7 @@ $(function(){
 	/**
     	 * checkebox的全选与反选
     	 */
-    	
+
     	$("[name=items]:checkbox").click(function(){
     		var flag=true;
     		
@@ -64,7 +64,6 @@ $(function(){
     		$("[name=items]:checkbox").each(function(){
     			
     			if($this.hasClass("glyphicon-stop")){
-    				/*$(this).prop("checked","checked");*/
     				$(this).prop("checked",!$(this).attr("checked"));
     			}else{
     				$(this).removeAttr("checked");

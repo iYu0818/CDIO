@@ -438,8 +438,6 @@ public class MailServices {
 
 	        // 7. 保存设置
 	        message.saveChanges();
-	        
-	        
 
 	        return message;
 	    }

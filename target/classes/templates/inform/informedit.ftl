@@ -92,7 +92,6 @@ a:hover {
 						</div>
 				</div>
 				</div>
-
 				<!--盒子尾-->
 				<div class="box-footer">
 					<input class="btn btn-primary" id="save" type="submit" value="保存" />
@@ -101,10 +100,8 @@ a:hover {
 				</div>
 			</form>
 		</div>
-
 	</div>
 </div>
-
 <#include "/common/modalTip.ftl"> 
 <script type="text/javascript">
 
@@ -112,7 +109,7 @@ $('.successToUrl').on('click',function(){
 	window.location.href='/infrommanage';
 });
 //表单提交前执行的onsubmit()方法；返回false时，执行相应的提示信息；返回true就提交表单到后台校验与执行
-function check() {
+function check() {6
 	console.log("开始进入了");
 	//提示框可能在提交之前是block状态，所以在这之前要设置成none
 	$('.alert-danger').css('display', 'none');

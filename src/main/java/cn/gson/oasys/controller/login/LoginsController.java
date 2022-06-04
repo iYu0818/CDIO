@@ -31,9 +31,6 @@ import cn.gson.oasys.services.user.UserLongRecordService;
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.UserAgent;
 import eu.bitwalker.useragentutils.Version;
-
-
-
 @Controller
 @RequestMapping("/")
 public class LoginsController {
@@ -149,7 +146,7 @@ public class LoginsController {
 		int w = 135, h = 40;
 		VerifyCodeUtils.outputImage(w, h, response.getOutputStream(), verifyCode);
 
-		// 将验证码存储在session以便登录时校验
+		// 将验证码存储在session以便登录时校验，
 		session.setAttribute(CAPTCHA_KEY, verifyCode.toLowerCase());
 	}
 	

@@ -452,7 +452,7 @@ public class NoteController {
 			Page<Note> upage=NoteService.sortpage(page, baseKey, userid,null,null,null, type, status, time);
 			typestatus(request);
 			if(baseKey!=null){
-				//如果有搜索关键字那么就记住它
+				//关键词搜索
 				request.setAttribute("sort", "&baseKey="+baseKey);
 			}
 			//没有就默认查找所有

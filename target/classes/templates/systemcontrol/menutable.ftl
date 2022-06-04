@@ -28,10 +28,10 @@
 								<td><span class="labels"><label><input type="checkbox" disabled><i>✓</i></label></span></td>
 							</#if>
 							<td>
-								<a  href="changeSortId?parentid=${one.parentId}&sortid=${one.sortId}&menuid=${one.menuId}&num=1" class="label sheding">
-									<span class="glyphicon glyphicon-arrow-up"></span> 上移</a>
-								<a href="changeSortId?parentid=${one.parentId}&sortid=${one.sortId}&menuid=${one.menuId}&num=-1" class="label sheding">
-									<span class="glyphicon glyphicon-arrow-down"></span> 下移</a>
+<#--								<a  href="changeSortId?parentid=${one.parentId}&sortid=${one.sortId}&menuid=${one.menuId}&num=1" class="label sheding">-->
+<#--									<span class="glyphicon glyphicon-arrow-up"></span> 上移</a>-->
+<#--								<a href="changeSortId?parentid=${one.parentId}&sortid=${one.sortId}&menuid=${one.menuId}&num=-1" class="label sheding">-->
+<#--									<span class="glyphicon glyphicon-arrow-down"></span> 下移</a>-->
 								<a href="menuedit?id=${one.menuId}" class="label xiugai">
 									<span class="glyphicon glyphicon-edit"></span> 修改</a>
 								<a onclick="{return confirm('删除该记录将不能恢复，确定删除吗？');};" href="deletethis?id=${one.menuId}" class="label shanchu">
@@ -56,10 +56,10 @@
 								<td><span class="labels"><label><input type="checkbox" disabled><i>✓</i></label></span></td>
 							</#if>
 							<td>
-								<a  href="changeSortId?parentid=${two.parentId}&sortid=${two.sortId}&menuid=${two.menuId}&num=1" class="label sheding">
-									<span class="glyphicon glyphicon-arrow-up"></span> 上移</a>
-								<a href="changeSortId?parentid=${two.parentId}&sortid=${two.sortId}&menuid=${two.menuId}&num=-1" class="label sheding">
-									<span class="glyphicon glyphicon-arrow-down"></span> 下移</a>
+<#--								<a  href="changeSortId?parentid=${two.parentId}&sortid=${two.sortId}&menuid=${two.menuId}&num=1" class="label sheding">-->
+<#--									<span class="glyphicon glyphicon-arrow-up"></span> 上移</a>-->
+<#--								<a href="changeSortId?parentid=${two.parentId}&sortid=${two.sortId}&menuid=${two.menuId}&num=-1" class="label sheding">-->
+<#--									<span class="glyphicon glyphicon-arrow-down"></span> 下移</a>-->
 								<a href="menuedit?id=${two.menuId}" class="label xiugai">
 									<span class="glyphicon glyphicon-edit"></span> 修改</a>
 								<a onclick="{return confirm('删除该记录将不能恢复，确定删除吗？');};" href="deletethis?id=${two.menuId}" class="label shanchu">

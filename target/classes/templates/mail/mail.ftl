@@ -110,7 +110,6 @@
 			 	var title=$(".titles").text();
 			  $(".thistable").load("mailtitle",{val:"公告",title:title});
 		   });
-		
-		
+
 	});
 </script>

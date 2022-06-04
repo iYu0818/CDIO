@@ -29,7 +29,7 @@
 						<th scope="col">发布人</th>
 						<th scope="col">部门</th>
 						<th scope="col" class="co commen ">状态<span class="block"></span></th>
-						<th>置顶</th>
+<#--						<th>置顶</th>-->
 						<th scope="col">操作</th>
 					</tr>
 				</thead>
@@ -45,11 +45,6 @@
 						<td><span class="label label-default">已取消</span></td>
 						<#else>
 						<td><span class="label ${task.statuscolor}">${task.statusname}</span></td>
-						</#if>
-						<#if task.zhiding==true>
-							<td> <span class="labels"><label><input type="checkbox" name="top" class="val" checked disabled><i>✓</i></label></span></td>
-						<#else>
-							<td> <span class="labels"><label><input type="checkbox" name="top" class="val" disabled><i>✓</i></label></span></td>
 						</#if>
 						<td><a  href="edittasks?id=${task.taskid}"
 							class="label xiugai"><span

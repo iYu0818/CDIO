@@ -8,7 +8,5 @@ import cn.gson.oasys.model.entity.process.ProcessList;
 public interface BursementDao extends PagingAndSortingRepository<Bursement, Long>{
 
 	Bursement findByProId(ProcessList process);
-	
-	
 
 }

@@ -80,7 +80,7 @@ public class MenuSysController {
 	}
 	
 	/**
-	 * 改变排序
+	 * 改变排序，菜单页的前后排序，已删除取消使用
 	 * @param req
 	 * @return
 	 */
@@ -201,7 +201,6 @@ public class MenuSysController {
 				
 			}
 			//执行业务代码
-			
 			System.out.println("此操作是正确的");
 			req.setAttribute("success", "后台验证成功");
 		}

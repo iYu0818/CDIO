@@ -340,7 +340,6 @@ public class TaskController {
 	public String select(HttpServletRequest request, @SessionAttribute("userId") Long userId, Model model,
 			@RequestParam(value = "page", defaultValue = "0") int page,
 			@RequestParam(value = "size", defaultValue = "10") int size) throws ParseException {
-	
 		String title =null;
 		if(!StringUtil.isEmpty(request.getParameter("title"))){
 			 title = request.getParameter("title").trim();

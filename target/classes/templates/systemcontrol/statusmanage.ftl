@@ -39,6 +39,7 @@ a:hover {
 							<input type="text" class="form-control input-sm baseKey"
 								placeholder="按名称/模块查找" />
 							<div class="input-group-btn">
+
 								<a class="btn btn-sm btn-default baseKeySubmit"><span
 									class="glyphicon glyphicon-search"></span></a>
 							</div>
@@ -53,6 +54,8 @@ a:hover {
 			</div>
 		</div>
 	</div>
+
+<#--绑定查找按钮单击事件-->
 <script>
 	$('.baseKeySubmit').on('click',function(){
 		var name=$('.baseKey').val();
